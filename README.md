@@ -1,8 +1,9 @@
 # Field Notes
-Feild Notes allows environmental scientist to upload their field notes electronically and easily search through their work.
+Field Notes allows environmental scientist to upload their field notes electronically and easily search through their work for safe and secure access to excavation and surveying data.
 
 ## About
---under construction--
+The app is built in NodeJS and and works with a PostgreSQL database. It also utilizes Pug HTML rendering along with Express, Knex, and the Bookshelf ORM. Materialize CSS was used for styling.
+
 
 ## Technology
 <img src="img/nodejs.png" alt="express" width="200px">
