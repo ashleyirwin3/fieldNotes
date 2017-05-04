@@ -14,7 +14,7 @@ Feild Notes allows environmental scientist to upload their field notes electroni
 <img src="img/materialize.png" alt="express" width="200px">
 
 ## ERD
---under construction--
+<img src="img/Field Notes ERD.png" width="200px">
 
 ## Mock Up
 <img src="/img/Field Notes-Landing Page.png" width="200px"><img src="/img/Field Notes-Register Page.png" width="200px"><img src="/img/Field Notes-Profile Page (1).png" width="200px">
