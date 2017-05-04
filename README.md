@@ -5,13 +5,13 @@ Feild Notes allows environmental scientist to upload their field notes electroni
 --under construction--
 
 ## Technology
-<img src="images/nodejs.png" alt="express" width="200px">
-<img src="images/postgres.png" alt="postgres" width="200px">
-<img src="images/bookshelf-icon.png" alt="bookshelf" width="200px">
-<img src="images/knex.png" alt="knex" width="200px">
-<img src="images/express.png" alt="express" width="200px">
-<img src="images/pug.png" alt="express" width="200px">
-<img src="images/materialize.png" alt="express" width="200px">
+<img src="img/nodejs.png" alt="express" width="200px">
+<img src="img/postgres.png" alt="postgres" width="200px">
+<img src="img/bookshelf-icon.png" alt="bookshelf" width="200px">
+<img src="img/knex.png" alt="knex" width="200px">
+<img src="img/express.png" alt="express" width="200px">
+<img src="img/pug.png" alt="express" width="200px">
+<img src="img/materialize.png" alt="express" width="200px">
 
 ## ERD
 --under construction--
