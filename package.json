@@ -17,10 +17,14 @@
   },
   "homepage": "https://github.com/ashleyirwin3/fieldNotes#readme",
   "dependencies": {
+    "body-parser": "~1.16.0",
     "bookshelf": "^0.10.3",
-    "express": "^4.15.2",
-    "knex": "^0.13.0",
-    "pg": "^6.1.5",
-    "pug": "^2.0.0-rc.1"
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "express": "~4.14.1",
+    "knex": "^0.12.9",
+    "morgan": "~1.7.0",
+    "pg": "^6.1.2",
+    "serve-favicon": "~2.3.2"
   }
 }
