@@ -6,6 +6,6 @@ const { getEntries } = require('../controllers/entryCtrl');
 
 const router = Router();
 
-router.get('/entries', getEntries);
+router.get('/entry', getEntries);
 
 module.exports = router;
