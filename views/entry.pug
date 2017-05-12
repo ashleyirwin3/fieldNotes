@@ -52,7 +52,15 @@ block content
         input.form-control#stopTime(
           type='text'
           name='stopTime'
-          placeholder
+          placeholder=''
+          required
+        )
+      .form-group
+        label(for='surveyors') Surveyors
+        input.form-control#surveyors(
+          type='text'
+          name='surveyors'
+          placeholder=''
           required
         )
       .form-group
@@ -99,7 +107,7 @@ block content
         label(for='depthMin') Depth Minimun
         input.form-control#depthMin(
           type='text'
-          name+'depthMin'
+          name='depthMin'
           placeholder=''
           required
         )
@@ -207,3 +215,5 @@ block content
           placeholder=''
           required
         )
+      .entry-form_submit
+        input.btn.btn-info.lg(type='submit' value='Submit')
