@@ -10,6 +10,11 @@ const app = express();
 
 const port = process.env.PORT || 3000;
 
+app.set('view engine', 'pug');
+app.locals.appname = 'Field Notes';
+app.locals.errors = {};
+app.locals.body = {};
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/api/v1/', routes);
