@@ -1,0 +1,219 @@
+//- extends/layout-entry.pug
+
+//- include partials/navbar.pug
+
+block content
+  .heading
+    h3 New Entry
+  .entry-form
+    form(method="POST")
+      .form-group
+        label(for='siteLocality') Site Locality
+        input.form-control#siteLocality(
+          type='text'
+          name= 'siteLocality'
+          placeholder=''
+          requried
+        )
+      .form-group
+        label(for='fieldNo') Field Number
+        input.form-control#fieldNo(
+          type='text'
+          name='fieldNo'
+          placeholder=''
+          required
+        )
+      .form-group
+        label(for='date') Date
+        input.form-control#date(
+          type='text'
+          name='date'
+          placeholder=''
+          required
+        )
+      .form-group
+        label(for='wp') WP
+        input.from-control#wp(
+          type='text'
+          name='wp'
+          placeholder=''
+          required
+        )
+      .form-group
+        label(for='startTime') Start Time
+        input.form-control#startTime(
+          type='text'
+          name='startTime'
+          placeholder=''
+          required
+        )
+      .form-group
+        label(for='stopTime') Stop Time
+        input.form-control#stopTime(
+          type='text'
+          name='stopTime'
+          placeholder=''
+          required
+        )
+      .form-group
+        label(for='surveyors') Surveyors
+        input.form-control#surveyors(
+          type='text'
+          name='surveyors'
+          placeholder=''
+          required
+        )
+      .form-group
+        label(for='coordinates') Coordinates
+        input.form-control#coordinates(
+          type='text'
+          name='coordinates'
+          placeholder=''
+          required
+        )
+      .form-group
+        label(for='underwaterVis') Underwater Visibility
+        input.form-control#underwaterVis(
+          type='text'
+          name='underwaterVis'
+          placeholder=''
+          required
+        )
+      .form-group
+        label(for='widthMin') Width Minimun
+        input.form-control#widthMin(
+          type='text'
+          name='widthMin'
+          placeholder=''
+          required
+        )
+      .form-group
+        label(for='widthMax') Width Maximun
+        input.form-control#widthMax(
+          type='text'
+          name='widthMax'
+          placeholder=''
+          required
+        )
+      .form-group
+        label(for='widthAvg') Width Average
+        input.form-control#widthAvg(
+          type='text'
+          name='widthAvg'
+          placeholder=''
+          required
+        )
+      .form-group
+        label(for='depthMin') Depth Minimun
+        input.form-control#depthMin(
+          type='text'
+          name='depthMin'
+          placeholder=''
+          required
+        )
+      .form-group
+        label(for='depthMax') Depth Maximun
+        input.form-control#depthMax(
+          type='text'
+          name='depthMax'
+          placeholder=''
+          required
+        )
+      .form-group
+        label(for='depthAvg') Depth Average
+        input.form-control#depthAvg(
+          type='text'
+          name='depthAvg'
+          placeholder=''
+          required
+        )
+      .form-group
+        label(for='channelRipStr') Channel Riparian Structure
+        input.form-control#channelRipStr(
+          type='text'
+          name='channelRipStr'
+          placeholder=''
+          required
+        )
+      .form-group
+        label(for='sBankErosion') Steam Bank Erosion
+        input.form-control#sBankErosion(
+          type='text'
+          name='sBankErosion'
+          placeholder=''
+          required
+        )
+      .form-group
+        label(for='notableFeats') Notable Features
+        input.form-conrtol#notableFeats(
+          type='text'
+          name='notableFeats'
+          placeholder=''
+          required
+        )
+      .form-group
+        label(for='weather') Weather Conditions
+        input.form-control#weather(
+          type='text'
+          name='weather'
+          placeholder=''
+          required
+        )
+      .form-group
+        label(for='sand') Sand
+        input.form-control#sand(
+          type='text'
+          name='sand'
+          placeholder=''
+          required
+        )
+      .form-group
+        label(for='gravel') Gravel
+        input.form-control#gravel(
+          type='text'
+          name='gravel'
+          placeholder=''
+          required
+        )
+      .form-group
+        label(for='cobble') Cobble
+        input.form-control#cobble(
+          type='text'
+          name='cobble'
+          placeholder=''
+          required
+        )
+      .form-group
+        label(for='boulder') Boulder
+        input.form-control#boulder(
+          type='text'
+          name='boulder'
+          placeholder=''
+          required
+        )
+      .form-group
+        label(for='bedrock') Bedrock
+        input.form-control#bedrock(
+          type='text'
+          name='bedrock'
+          placeholder=''
+          required
+        )
+        .form-group
+        label(for='detritus') Detritus
+        input.form-control#detritus(
+          type='text'
+          name='detritus'
+          placeholder=''
+          required
+        )
+      .form-group
+        label(for='notes') Notes
+        input.form-control#notes(
+          type='text'
+          name='notes'
+          placeholder=''
+          required
+        )
+      .entry-form_submit
+        input.btn.btn-info.lg(type='submit' value='Submit')

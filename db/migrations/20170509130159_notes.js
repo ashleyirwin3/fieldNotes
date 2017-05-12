@@ -14,7 +14,7 @@ exports.up = (knex, Promise) => {
     table.string('widthMin').notNullable();
     table.string('widthMax').notNullable();
     table.string('widthAvg').notNullable();
-    table.string('depthMin').notNullable();
+    table.string('depthMin')
     table.string('depthMax').notNullable();
     table.string('depthAvg').notNullable();
     table.string('channelRipStr').notNullable();
@@ -40,4 +40,4 @@ exports.up = (knex, Promise) => {
 exports.down = (knex, Promise) =>
   knex.schema
   .dropTable('entries')
-  .droptable('users');
+  .dropTable('users');
