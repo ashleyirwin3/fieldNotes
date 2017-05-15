@@ -17,12 +17,16 @@ app.locals.body = {};
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static('public'));
 app.use('/api/v1/', routes);
 app.use((req, res) => {
   res.render('entry')
 });
 app.use((req, res) => {
   res.render('user')
+});
+app.use((req, res) => {
+  res.render('profile')
 });
 
 app.listen(port, function() {
