@@ -16,9 +16,9 @@ module.exports.create = (req, res, err) => {
     });
 };
 
-module.exports.getEntries = (req, res, next) => {
-  Entry.fetchAll()
-  .then( (entries) => {
-    res.status(200).json(entries);
-  });
-};
+// module.exports.getEntries = (req, res, next) => {
+//   Entry.fetchAll()
+//   .then( (entries) => {
+//     res.status(200).json(entries);
+//   });
+// };
