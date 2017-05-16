@@ -3,9 +3,6 @@
 const { knex } = require('../db/database');
 const User = require('../models/user');
 
-module.exports.show = (req, res) => {
-  res.render('user')
-}
 
 module.exports.create = (req, res, err) => {
   console.log(req.body)
