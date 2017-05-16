@@ -2,12 +2,11 @@
 
 const { Router } = require('express');
 
-const { getEntries } = require('../controllers/profileCtrl');
+const getAllEntries = require('../controllers/profileCtrl');
 
 const router = Router();
 
 // router.get('/profile', show);
-router.get('/profile', getEntries)
-
+router.get('/profile', getAllEntries)
 
 module.exports = router;
