@@ -10,6 +10,16 @@ module.exports.getEntries = (req, res, next) => {
     .catch(err => next(err))
 }
 
+module.exports.addEntry = ({ body }, res, next) => {
+  console.log(body)
+  Profile.forge(body)
+    .save()
+    .then((entryObject) => res.status(200).json({"msg": "Post successful"}))
+    .catch( (error ) => {
+      next(error)
+    })
+}
+
 module.exports.getEntryByDate = ({ params: { date } }, res, next) => {
   Profile.forge({ date })
   .fetchAll()
