@@ -34,9 +34,13 @@ module.exports.getEntryByPerson = ({ params: { surveyors } }, res, next) => {
   .catch(err => next(err))
 }
 
-module.exports.deleteEntry = ({ params: { id } }, res, next) => {
-  Profile.forge({ id })
+module.exports.deleteEntry = ({params:{id}}, res, next) => {
+  Profile.forge({id})
   .destroy()
-  .then(() => res.status(201).json({ "msg": "Entry Deleted"}))
-  .catch(err => next(err))
-}
+  .then( (note) => {
+    res.status(202).json(note);
+  })
+  .catch( (err) => {
+    next(err);
+  });
+};
