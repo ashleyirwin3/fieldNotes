@@ -1,6 +1,6 @@
 
 exports.up = (knex, Promise) => {
-  return knex.schema.createTable('entries', (table) => {
+  return knex.schema.createTable('notes', (table) => {
     table.increments();
     table.string('siteLocality').notNullable();
     table.integer('fieldNo').notNullable();
@@ -39,5 +39,5 @@ exports.up = (knex, Promise) => {
 
 exports.down = (knex, Promise) =>
   knex.schema
-  .dropTable('entries')
+  .dropTable('notes')
   .dropTable('users');
